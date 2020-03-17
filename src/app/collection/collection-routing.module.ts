@@ -5,6 +5,7 @@ import { CollectionHomeComponent } from './collection-home/collection-home.compo
 
 const routes: Routes = [
   {
+     // anytime the user goes to the collection route, the ElementsHomeComponent will be displayed
     path: 'collection', component: CollectionHomeComponent
   }
 ];

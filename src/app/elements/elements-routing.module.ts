@@ -4,7 +4,7 @@ import { ElementsHomeComponent} from './elements-home/elements-home.component'
 
 const routes: Routes = [
   {
-    // anytime the use goes to the elements route, the ElementsHomeComponent will be displayed
+    // anytime the user goes to the elements route, the ElementsHomeComponent will be displayed
     path: 'elements', component: ElementsHomeComponent
   }
 ];
