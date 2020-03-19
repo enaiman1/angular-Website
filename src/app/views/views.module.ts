@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import{ SharedModule } from '../shared/shared.module'
 import { ViewsRoutingModule } from './views-routing.module';
 import { StatisticComponent } from './statistic/statistic.component';
 import { ViewsHomeComponent } from './views-home/views-home.component';
+import { ItemListComponent } from './item-list/item-list.component';
 
 
 
 
 @NgModule({
-  declarations: [StatisticComponent, ViewsHomeComponent],
+  declarations: [StatisticComponent, ViewsHomeComponent, ItemListComponent],
   imports: [
     CommonModule,
-    ViewsRoutingModule
+    ViewsRoutingModule,
+    SharedModule
   ]
 })
 export class ViewsModule { }

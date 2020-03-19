@@ -26,6 +26,13 @@ const routes: Routes = [
     // returns actual collection module
     .then( m => m.ViewsModule)
   },
+  {
+    // will load the collection anytime user go to the elements route 
+    path: 'mods',
+    loadChildren:()=> import('./mods/mods.module')
+    // returns actual collection module
+    .then( m => m.ModsModule)
+  },
 
   {
     // whenever use goes to localhost 4200 or root they will see the home component
