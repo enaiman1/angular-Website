@@ -7,15 +7,24 @@ import { NotFoundComponent } from "./not-found/not-found.component"
 const routes: Routes = [
   {
     // will load the elements anytime user go to the elements route 
-    path: 'elements',loadChildren:()=> import('./elements/elements.module')
+    path: 'elements',
+    loadChildren:()=> import('./elements/elements.module')
     // returns actualy elements moudle
     .then( m => m.ElementsModule)
   },
   {
     // will load the collection anytime user go to the elements route 
-    path: 'collection',loadChildren:()=> import('./collection/collection.module')
+    path: 'collection',
+    loadChildren:()=> import('./collection/collection.module')
     // returns actual collection module
     .then( m => m.CollectionModule)
+  },
+  {
+    // will load the collection anytime user go to the elements route 
+    path: 'views',
+    loadChildren:()=> import('./views/views.module')
+    // returns actual collection module
+    .then( m => m.ViewsModule)
   },
 
   {
